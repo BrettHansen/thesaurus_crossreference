@@ -42,7 +42,7 @@ function addNewInput() {
 }
 
 function fetchSynonyms(word) {
-	$.get("http://words.bighugelabs.com/api/2/ced3808c844ba0603e471983d7c453b8/" + word + "/json", function(data) {
+	$.get("//words.bighugelabs.com/api/2/ced3808c844ba0603e471983d7c453b8/" + word + "/json", function(data) {
 		data = JSON.parse(data);
 		for(var part in data) {
 			var set = data[part];
